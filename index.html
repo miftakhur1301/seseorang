@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fbf4f1">
+  <meta name="description" content="Sebuah pesan kecil yang ingin kusampaikan dengan tulus.">
+  <title>Maaf yaa — sebuah pesan kecil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles-untuk-seseorang.css">
+  <script src="script-untuk-seseorang.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <main class="page-shell">
+    <section class="intro" aria-labelledby="intro-title">
+      <span class="intro-mark" aria-hidden="true">♡</span>
+      <p class="eyebrow">sebuah pesan kecil, buat kamu</p>
+      <h1 id="intro-title">Boleh aku minta maaf?</h1>
+      <p class="intro-copy">Aku tahu kamu lagi ngambek sama aku...</p>
+      <button class="button button-primary" id="read-message" type="button" aria-controls="letter" aria-expanded="false">
+        Baca pesan aku <span aria-hidden="true">↓</span>
+      </button>
+      <span class="tiny-star star-one" aria-hidden="true">✳</span>
+      <span class="tiny-star star-two" aria-hidden="true">✧</span>
+    </section>
+
+    <section class="letter" id="letter" aria-labelledby="letter-title" hidden>
+      <div class="letter-topline"><span aria-hidden="true">♡</span> dari aku, dengan tulus</div>
+      <h2 id="letter-title">Maaf yaa...</h2>
+      <div class="letter-copy">
+        <p>Maaf ya bikin kamu ngambek. Aku bener-bener minta maaf kalau apa yang aku lakuin atau aku omongin bikin kamu kesel atau nggak nyaman. Aku nggak bermaksud bikin kamu merasa begitu.</p>
+        <p>Aku sadar mungkin aku salah dan seharusnya bisa lebih ngerti perasaan kamu. Aku juga nggak mau cari alasan atau malah bikin keadaan jadi tambah nggak enak.</p>
+        <p>Jadi maafin aku ya. Jangan ngambek lagi yaaa 😭 Aku bakal berusaha lebih hati-hati lagi supaya kejadian kayak gini nggak terulang.</p>
+        <p>Kalau kamu masih kesel, gapapa. Aku ngerti. Aku cuma berharap nanti kamu udah nggak kesel lagi dan kita bisa ngobrol seperti biasa.</p>
+      </div>
+    </section>
+
+    <section class="gallery-section" aria-labelledby="gallery-title">
+      <div class="section-heading">
+        <p class="eyebrow">beberapa momen</p>
+        <h2 id="gallery-title">Sedikit galeri...</h2>
+      </div>
+      <div class="gallery-grid">
+        <button class="photo-card" type="button" data-photo="Foto 1" aria-label="Lihat Foto 1">
+          <span class="photo-visual placeholder-one" aria-hidden="true">
+            <img class="photo-image" src="Foto/foto-1.jpg.jpeg" alt="">
+          </span>
+          <span class="photo-caption">Foto 1</span>
+        </button>
+        <button class="photo-card" type="button" data-photo="Foto 2" aria-label="Lihat Foto 2">
+          <span class="photo-visual placeholder-two" aria-hidden="true">
+            <img class="photo-image" src="Foto/foto-2.jpg.jpeg" alt="">
+          </span>
+          <span class="photo-caption">Foto 2</span>
+        </button>
+        <button class="photo-card" type="button" data-photo="Foto 3" aria-label="Lihat Foto 3">
+          <span class="photo-visual placeholder-three" aria-hidden="true">
+            <img class="photo-image" src="Foto/foto-3.jpg.jpeg" alt="">
+          </span>
+          <span class="photo-caption">Foto 3</span>
+        </button>
+        <button class="photo-card" type="button" data-photo="Foto 4" aria-label="Lihat Foto 4">
+          <span class="photo-visual placeholder-four" aria-hidden="true">
+            <img class="photo-image" src="Foto/foto-4.jpg.jpeg" alt="">
+          </span>
+          <span class="photo-caption">Foto 4</span>
+        </button>
+      </div>
+      <p class="gallery-hint">Klik foto untuk melihat lebih dekat.</p>
+    </section>
+
+    <section class="closing-card" aria-labelledby="closing-title">
+      <span class="closing-mark" aria-hidden="true">♡</span>
+      <h2 id="closing-title">Sekali lagi, maaf yaa.</h2>
+      <p>Jangan ngambek lama-lama yaaa :(</p>
+      <button class="button button-soft" id="forgive-button" type="button">Oke, aku maafin</button>
+      <p class="thank-you" id="thank-you" role="status" aria-live="polite" hidden>
+        Hehe, makasih yaa :)<br>Semoga udah nggak ngambek lagi.
+      </p>
+      <div class="heart-burst" id="heart-burst" aria-hidden="true"></div>
+    </section>
+
+    <footer class="page-footer">dibuat dengan tulus, khusus buat kamu <span aria-hidden="true">♡</span></footer>
+  </main>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Tampilan foto lebih besar">
+    <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Tutup foto">×</button>
+    <div class="lightbox-content" id="lightbox-content"></div>
+    <p class="lightbox-caption" id="lightbox-caption"></p>
+  </dialog>
+</body>
+</html>
